@@ -6,7 +6,7 @@ public class MulticastServer {
 
 
         //Deafault portnumber
-        int portNumber = 5000;
+        int portNumber = 1235;
         if (args.length >= 1) {
 
             portNumber = Integer.parseInt(args[0]);
@@ -15,7 +15,7 @@ public class MulticastServer {
 
         //Create multicastsocket
         MulticastSocket serverMulticastSocket = new MulticastSocket(portNumber);
-        System.out.println("MulticastSocket is created at port" + portNumber);
+        System.out.println("MulticastSocket is created at port " + portNumber);
 
         //Determine the IP
         InetAddress group = InetAddress.getByName("225.4.5.6");
