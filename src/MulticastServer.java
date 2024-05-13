@@ -32,10 +32,10 @@ public class MulticastServer {
             serverMulticastSocket.receive(data);
             String msg = new String(data.getData()).trim();
             System.out.println("Message recieved from client = "+msg);
-            serverMulticastSocket.close();
+
 
         }
-
+        serverMulticastSocket.close();
     }
 
 }
